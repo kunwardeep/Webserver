@@ -1,0 +1,34 @@
+<html><head>
+  <!--meta http-equiv="Content-Security-Policy" content="block-all-mixed-content"-->
+  <!--meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"-->
+
+  <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src https:; report-uri http://localhost:8080/processData">
+
+
+
+
+
+<!--https://c3d2c6cc07643da020224b502a3cc418.report-uri.io/r/default/csp/reportOnly-->
+
+
+<title>A very simple webpage</title>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<img src="http://fsltechnologies.com/images/fsltexhnologies-logo.jpg">
+<h1>A very simple webpage.</h1>
+<!-- <form action="https://localhost/processData" method="post">
+  <input type="text" name="data" value="mydata" />
+  <input type="submit" />
+</form> -->
+
+<script>
+setTimeout(function(){
+  $.get("http://localhost:8080/testpage.html", function() {
+    alert( "success" );
+  })
+}, 5000);
+
+</script>
+</body></html>
